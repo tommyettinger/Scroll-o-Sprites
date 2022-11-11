@@ -1,11 +1,11 @@
 name=Scroll
 filename=
-output=packed/Scroll
+output=packedScroll
 
 alias=true
 alphaThreshold=0
 debug=false
-duplicatePadding=false
+duplicatePadding=true
 edgePadding=true
 fast=true
 filterMag=Nearest
@@ -27,17 +27,21 @@ wrapY=ClampToEdge
 premultiplyAlpha=false
 grid=false
 square=false
-bleed=false
+bleed=true
 limitMemory=true
 useIndexes=true
+prettyPrint=false
+legacyOutput=false
 
 scaleFactors=[{suffix:"",factor:1,resampling:bicubic}]
 inputFiles=[{path:named,type:Input,dirFilePrefix:null,recursive:false,flattenPaths:false}]
+keepInputFileExtensions=false
 
 
 -PROJ-
 
-version=4.8.2
+version=4.11.0
 fileTypeType=png
-fileTypeData={encoding:RGBA8888,compType:PNG8,compData:"{level:7,threshold:100,dithering:false}"}
+fileTypeData={encoding:RGBA8888}
 previewBackgroundColor=ffffffff
+projectSettings={inputFiles:{}}
